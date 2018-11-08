@@ -1,6 +1,7 @@
 package us.codecraft.jobhunter.model;
 
 import org.apache.commons.codec.digest.DigestUtils;
+
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.model.AfterExtractor;
 import us.codecraft.webmagic.model.annotation.ExtractBy;
@@ -92,7 +93,7 @@ public class LieTouJobInfo implements AfterExtractor {
                 '}';
     }
 
-    @Override
+//    @Override
     public void afterProcess(Page page) {
     }
 }

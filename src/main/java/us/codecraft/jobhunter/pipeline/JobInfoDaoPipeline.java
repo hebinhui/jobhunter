@@ -1,12 +1,13 @@
 package us.codecraft.jobhunter.pipeline;
 
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Component;
+
 import us.codecraft.jobhunter.dao.JobInfoDAO;
 import us.codecraft.jobhunter.model.LieTouJobInfo;
 import us.codecraft.webmagic.Task;
 import us.codecraft.webmagic.pipeline.PageModelPipeline;
-
-import javax.annotation.Resource;
 
 /**
  * @author code4crafer@gmail.com
@@ -19,7 +20,7 @@ public class JobInfoDaoPipeline implements PageModelPipeline<LieTouJobInfo> {
     @Resource
     private JobInfoDAO jobInfoDAO;
 
-    @Override
+//    @Override
     public void process(LieTouJobInfo lieTouJobInfo, Task task) {
         jobInfoDAO.add(lieTouJobInfo);
     }
